@@ -37,6 +37,12 @@ class Repository implements RepositoryInterface
         return $this->model->with($relations)->paginate($count);
     }
 
+    //
+    public function take(int $count)
+    {
+        return $this->model->orderBy('created_at', 'desc')->take($count)->get();
+    }
+
     // show the record with the given id
     public function selectById(int $id)
     {
