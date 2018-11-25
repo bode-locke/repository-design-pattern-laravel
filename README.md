@@ -1,5 +1,6 @@
-# Repository Pattern for Laravel and PHP 7
+# Repository Design Pattern for Laravel and PHP 7
 
+Download the folder and place it at the root of your app folder. 
 
 You can see all the methods int the RepositoryInterface.php file.
 If you want to change or add methods, must be sure you implement it in this file.
@@ -30,17 +31,17 @@ class PostsController extends Controller
         return $this->model->withAndPaginate(['categories', 'tags'], 15);
     }
 
-    public function showById($id)
+    public function selectById($id)
     {
         return $this->model->selectById($id);
     }
 
-    public function showBySlug($slug)
+    public function selectByColumn($slug)
     {
         return $this->model->selectByColumn('slug', $slug);
     }
 
-    public function destroy($id)
+    public function delete($id)
     {
         $this->model->delete($id);
     }
