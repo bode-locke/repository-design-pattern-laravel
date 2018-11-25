@@ -6,6 +6,8 @@ interface RepositoryInterface
 
     public function allPaginate(int $count);
 
+    public function take(int $count);
+
     public function with(array $relations);
 
     public function withAndPaginate(array $relations, int $count);
@@ -21,4 +23,8 @@ interface RepositoryInterface
     public function update(array $data, int $id);
 
     public function delete(int $id);
+
+    public function getModel();
+
+    public function setModel($model);
 }
