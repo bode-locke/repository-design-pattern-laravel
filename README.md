@@ -1,6 +1,6 @@
 # Repository Pattern for Laravel and PHP 7
 
-```
+``` laravel
 <?php
 
 namespace App\Http\Controllers;
