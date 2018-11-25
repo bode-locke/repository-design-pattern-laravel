@@ -1,7 +1,7 @@
 # Repository Pattern for Laravel and PHP 7
 
 
-You can see all the methods int the RepositoryInterface.php
+You can see all the methods int the RepositoryInterface.php file.
 If you want to change or add methods, must be sure you implement it in this file.
 
 All the method are typed, if you're using a version earlier than php 7 you can just remove the type on the methods.
